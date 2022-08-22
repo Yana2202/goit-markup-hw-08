@@ -1,0 +1,115 @@
+.button-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.button-item:not(:last-child) {
+  margin-right: 8px;
+}
+.button {
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 4px;
+  border: var(--accent-color);
+  font-family: "Roboto";
+  @include font(16px, 700, 26px);
+  /* identical to box height, or 162% */
+  letter-spacing: 0.03em;
+
+  color: var(--tertiary-font);
+  background: #f5f4fa;
+  cursor: pointer;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+button.current-1 {
+  color: var(--primary-bg-color);
+  background: var(--accent-color);
+}
+.work-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.work-name {
+  font-family: "Roboto";
+  @include font(18px, 700, 36px);
+  /* identical to box height, or 200% */
+  letter-spacing: 0.06em;
+  color: var(--tertiary-font);
+  border-bottom: 4px;
+}
+
+.work-item-content-wrapper {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: 0;
+}
+.work-list__work-item {
+  position: relative;
+  display: block;
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.work-text {
+  font-family: "Roboto";
+  @include font(16px, 700, 30px);
+  /* identical to box height, or 188% */
+
+  letter-spacing: 0.03em;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.work-img-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  padding-left: 24px;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* or 156% */
+
+  letter-spacing: 0.03em;
+
+  width: 100%;
+  height: 294px;
+  background: rgba(33, 150, 243, 0.9);
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  transform: translate(0, 100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .work-list__work-item:hover & {
+    transform: translate(0, 0);
+  }
+}
