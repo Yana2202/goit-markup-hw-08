@@ -27,19 +27,33 @@
           >
           <ul class="header-list">
             <li class="header-list__header-item">
-              <a href="./index.html" class="header-list__header-link current">Студия</a>
+              <a href="./index.html" class="header-list__header-link current"
+                >Студия</a
+              >
             </li>
             <li class="header-list__header-item">
-              <a href="./portfolio.html" class="header-list__header-link">Портфолио</a>
+              <a href="./portfolio.html" class="header-list__header-link"
+                >Портфолио</a
+              >
             </li>
             <li class="header-list__header-item">
-              <a href="./index.html" class="header-list__header-link">Контакты</a>
+              <a href="./index.html" class="header-list__header-link"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
+        <button type="button" class="burger-menu-open" data-menu-open>
+          <svg class="burger-menu-open__icon" width="40" height="40">
+            <use href="./images/sprite.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
         <ul class="contact-list">
           <li class="contact-list__contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-list__contact-link">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact-list__contact-link"
+            >
               <svg class="mail-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
@@ -56,9 +70,18 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/sprite.svg#icon-close-black-button"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </header>
     <main>
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <h1 class="hero-title">
             Эффективные решения<br />для вашего бизнеса
@@ -393,9 +416,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-container">
         <div class="page-footer-container">
           <a href="./index.html" class="footer-logo footer-theme-dark"
@@ -551,6 +574,8 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script>
+    
+    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
