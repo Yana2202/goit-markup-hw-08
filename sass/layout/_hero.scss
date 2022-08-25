@@ -1,22 +1,67 @@
 .hero {
   background: var(--secondary-bg-color);
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/Img.jpg");
+    url("../images/hero-bgr-mob.jpg");
+  @include retina {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bgr-mob-2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-size: cover;
   background-color: #c4c4c4;
+  @media screen and (min-width: 768px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bgr-tab.jpg");
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-bgr-tab-2x.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bgr-desk.jpg");
+    @include retina {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("../images/hero-bgr-desk-2x.jpg");
+    }
+  }
 }
 .hero-title {
-  min-width: 696px;
+  min-width: 360px;
   font-family: var(--primary-font);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   /* or 136% */
   text-transform: uppercase;
 
@@ -24,6 +69,9 @@
   color: var(--primary-bg-color);
   text-align: center;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 
 .hero-button {
@@ -50,5 +98,8 @@
       1px 4px 6px rgba(0, 0, 0, 0.16);
     background-color: #188ce8;
     color: var(--primary-bg-color);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 216px;
   }
 }
