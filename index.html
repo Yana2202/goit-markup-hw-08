@@ -209,56 +209,105 @@
           <h2 class="activity-title">Чем мы занимаемся</h2>
           <ul class="activity-list">
             <li class="activity-item">
-              <div class="activity-item-wrapper">
-                <img
-                  class="activity-img"
-                  src="./images/other1.jpg"
-                  alt="Мужчина печатает на клавиатуре"
-                  width="370"
-                  height="294"
+              <picture>
+                <source
+                  srcset="
+                    ./images/other1-desk.jpg    1x,
+                    ./images/other1-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
-                <p class="activity-item-text">Десктопні додатки</p>
-              </div>
+                <div class="activity-item-wrapper">
+                  <img
+                    class="activity-img"
+                    src="./images/other1-desk-2x.jpg"
+                    alt="Мужчина печатает на клавиатуре"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="activity-item-text">Десктопні додатки</p>
+                </div>
+              </picture>
             </li>
             <li class="activity-item">
-              <div class="activity-item-wrapper">
-                <img
-                  class="activity-img"
-                  src="./images/other2.jpg"
-                  alt="Женщина печатает на ноутбуке"
-                  width="370"
-                  height="294"
+              <picture>
+                <source
+                  srcset="
+                    ./images/other2-desk.jpg    1x,
+                    ./images/other2-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
-                <p class="activity-item-text">Мобільні додатки</p>
-              </div>
+                <div class="activity-item-wrapper">
+                  <img
+                    class="activity-img"
+                    src="./images/other2-desk-2x.jpg"
+                    alt="Женщина печатает на ноутбуке"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="activity-item-text">Мобільні додатки</p>
+                </div>
+              </picture>
             </li>
             <li class="activity-item">
-              <div class="activity-item-wrapper">
-                <img
-                  class="activity-img"
-                  src="./images/other3.jpg"
-                  alt="Планшет с изображением шестиугольника"
-                  width="370"
-                  height="294"
+              <picture>
+                <source
+                  srcset="
+                    ./images/other3-desk.jpg    1x,
+                    ./images/other3-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
                 />
-                <p class="activity-item-text">Дизайнерські рішення</p>
-              </div>
+                <div class="activity-item-wrapper">
+                  <img
+                    class="activity-img"
+                    src="./images/other3-desk-2x.jpg"
+                    alt="Планшет с изображением шестиугольника"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="activity-item-text">Дизайнерські рішення</p>
+                </div>
+              </picture>
             </li>
           </ul>
         </div>
       </section>
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/ihor_demyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ihor-demianenko-desk.jpg    1x,
+                    ./images/ihor-demianenko-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-demianenko-tab.jpg    1x,
+                    ./images/ihor-demianenko-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ihor-demianenko-mob.jpg    1x,
+                    ./images/ihor-demianenko-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/ihor-demianenko-mob.jpg"
+                  alt="Игорь Демьяненко"
+                  width="450"
+                />
+              </picture>
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Игорь Демьяненко</h3>
                 <p lang="en" class="team-text">Product Designer</p>
@@ -295,13 +344,35 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/olha_repina.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olha-repina-desk.jpg    1x,
+                    ./images/olha-repina-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/olha-repina-tab.jpg    1x,
+                    ./images/olha-repina-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/olha-repina-mob.jpg    1x,
+                    ./images/olha-repina-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/olha-repina-mob.jpg"
+                  alt="Ольга Репина"
+                  width="450"
+                />
+              </picture>
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Ольга Репина</h3>
                 <p lang="en" class="team-text">Frontend Developer</p>
@@ -338,13 +409,36 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/mykola_tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-desk.jpg    1x,
+                    ./images/mykola-tarasov-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-tab.jpg    1x,
+                    ./images/mykola-tarasov-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-mob.jpg    1x,
+                    ./images/mykola-tarasov-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/mykola_tarasov.jpg"
+                  alt="Николай Тарасов"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Николай Тарасов</h3>
                 <p lang="en" class="team-text">Marketing</p>
@@ -381,13 +475,36 @@
               </div>
             </li>
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/mykhailo_yermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykhailo-ermakov-desk.jpg    1x,
+                    ./images/mykhailo-ermakov-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-ermakov-tab.jpg    1x,
+                    ./images/mykhailo-ermakov-tab-2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./images/mykhailo-ermakov-mob.jpg    1x,
+                    ./images/mykhailo-ermakov-mob-2x.jpg 2x
+                  "
+                  media="(min-width:320px)"
+                />
+                <img
+                  class="team-img"
+                  src="./images/mykhailo-ermakov-mob.jpg"
+                  alt="Михаил Ермаков"
+                  width="450"
+                />
+              </picture>
+
               <div class="team-list-content-wrapper">
                 <h3 class="team-name">Михаил Ермаков</h3>
                 <p lang="en" class="team-text">UI Designer</p>
@@ -426,7 +543,7 @@
           </ul>
         </div>
       </section>
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="customers-title">Постоянные клиенты</h2>
           <ul class="customers-list">

@@ -734,8 +734,21 @@ body {
   margin-bottom: 10px;
 }
 
-.features-item {
-  margin-right: 30px;
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features-item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .features-item {
+    width: calc((100% - 90px) / 4);
+  }
 }
 
 .features-text {
@@ -750,8 +763,6 @@ body {
 }
 
 .wrapper:not(:last-child) {
-  width: 420px;
-  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
