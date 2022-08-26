@@ -5,6 +5,13 @@
   // justify-content: center;
   // margin-bottom: 50px;
   margin-bottom: 25px;
+  padding-left: 15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: center;
+  }
 }
 .button-item:not(:last-child) {
   margin-right: 8px;
