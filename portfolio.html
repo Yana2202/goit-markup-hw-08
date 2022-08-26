@@ -26,13 +26,19 @@
           >
           <ul class="header-list">
             <li class="header-list__header-item">
-              <a href="./index.html" class="header-list__header-link ">Студия</a>
+              <a href="./index.html" class="header-list__header-link">Студия</a>
             </li>
             <li class="header-list__header-item">
-              <a href="./portfolio.html" class="header-list__header-link current">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="header-list__header-link current"
+                >Портфолио</a
+              >
             </li>
             <li class="header-list__header-item">
-              <a href="./index.html" class="header-list__header-link">Контакты</a>
+              <a href="./index.html" class="header-list__header-link"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
@@ -43,7 +49,10 @@
         </button>
         <ul class="contact-list">
           <li class="contact-list__contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-list__contact-link">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact-list__contact-link"
+            >
               <svg class="mail-icon" width="16" height="12">
                 <use href="./images/sprite.svg#icon-mail"></use>
               </svg>
@@ -87,13 +96,35 @@
           <ul class="work-list">
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio1.jpg"
-                  alt="Веб-сайт"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio1-desk.jpg    1x,
+                      ./images/portfolio1-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio1-tab.jpg    1x,
+                      ./images/portfolio1-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio1-mob.jpg    1x,
+                      ./images/portfolio1-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio1-mob.jpg"
+                    alt="Веб-сайт"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -107,13 +138,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio2.jpg"
-                  alt="Постер"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio2-desk.jpg    1x,
+                      ./images/portfolio2-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio2-tab.jpg    1x,
+                      ./images/portfolio2-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio2-mob.jpg    1x,
+                      ./images/portfolio2-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio2-mob.jpg"
+                    alt="Постер"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -127,13 +180,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio3.jpg"
-                  alt="Лого компании"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio3-desk.jpg    1x,
+                      ./images/portfolio3-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio3-tab.jpg    1x,
+                      ./images/portfolio3-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio3-mob.jpg    1x,
+                      ./images/portfolio3-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio3-mob.jpg"
+                    alt="Лого компании"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -147,13 +222,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio4.jpg"
-                  alt="Наушники"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio4-desk.jpg    1x,
+                      ./images/portfolio4-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio4-tab.jpg    1x,
+                      ./images/portfolio4-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio4-mob.jpg    1x,
+                      ./images/portfolio4-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio4-mob.jpg"
+                    alt="Наушники"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -167,13 +264,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio5.jpg"
-                  alt="Коробки"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio5-desk.jpg    1x,
+                      ./images/portfolio5-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio5-tab.jpg    1x,
+                      ./images/portfolio5-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio5-mob.jpg    1x,
+                      ./images/portfolio5-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio5-mob.jpg"
+                    alt="Коробки"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -187,13 +306,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio6.jpg"
-                  alt="Монитор"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio6-desk.jpg    1x,
+                      ./images/portfolio6-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio6-tab.jpg    1x,
+                      ./images/portfolio6-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio6-mob.jpg    1x,
+                      ./images/portfolio6-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio6-mob.jpg"
+                    alt="Монитор"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -207,13 +348,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio7.jpg"
-                  alt="Журнал"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio7-desk.jpg    1x,
+                      ./images/portfolio7-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio7-tab.jpg    1x,
+                      ./images/portfolio7-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio7-mob.jpg    1x,
+                      ./images/portfolio7-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio7-mob.jpg"
+                    alt="Журнал"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -227,13 +390,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio8.jpg"
-                  alt="Бирка"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio8-desk.jpg    1x,
+                      ./images/portfolio8-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio8-tab.jpg    1x,
+                      ./images/portfolio8-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio8-mob.jpg    1x,
+                      ./images/portfolio8-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio8-mob.jpg"
+                    alt="Бирка"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -247,13 +432,35 @@
             </li>
             <li class="work-list__work-item">
               <div class="work-img-wrapper">
-                <img
-                  class="work-img-wrapper__work-img"
-                  src="./images/portfolio/portfolio9.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio9-desk.jpg    1x,
+                      ./images/portfolio9-desk-2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio9-tab.jpg    1x,
+                      ./images/portfolio9-tab-2x.jpg 2x
+                    "
+                    media="(min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/portfolio9-mob.jpg    1x,
+                      ./images/portfolio9-mob-2x.jpg 2x
+                    "
+                    media="(min-width:320px)"
+                  />
+                  <img
+                    class="work-img-wrapper__work-img"
+                    src="./images/portfolio9-mob.jpg"
+                    alt="Ноутбук"
+                    width="100%"
+                  />
+                </picture>
                 <p class="overlay">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -332,26 +539,28 @@
             </li>
           </ul>
         </div>
-          <div class="footer-form-div">
-            <form class="footer-form">
-              <p class="footer-form-title">Підпишіться на розсилку</p>
-              <span class="footer-form-wrapper">
-                <input
-                  type="email"
-                  name="user_email"
-                  class="footer-form-input"
-                  placeholder="E-mail"
-                  required
-                />
-                <button type="submit" class="footer-form-submit">
-                  Підписатися
-                  <svg class="footer-form-icon" width="24" height="24">
-                    <use href="./images/sprite.svg#icon-icon-send"></use>
-                  </svg>
-                </button>
-              </span>
-            </form>
+        <div class="footer-form-div">
+          <form class="footer-form">
+            <p class="footer-form-title">Підпишіться на розсилку</p>
+            <span class="footer-form-wrapper">
+              <input
+                type="email"
+                name="user_email"
+                class="footer-form-input"
+                placeholder="E-mail"
+                required
+              />
+              <button type="submit" class="footer-form-submit">
+                Підписатися
+                <svg class="footer-form-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </span>
+          </form>
+        </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
