@@ -31,17 +31,25 @@
   //   margin-right: 70px;
   // }
   display: flex;
+  flex-direction: column;
   @media screen and (min-width: 768px) {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 .footer .container {
   display: flex;
 }
 .page-footer-container {
+  text-align: center;
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
+    text-align: left;
   }
 }
 .light-logo {
@@ -83,8 +91,6 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .social-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -92,6 +98,10 @@
   text-transform: uppercase;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 
 .social {
@@ -112,6 +122,13 @@
   }
 }
 
+.footer-form {
+  width: 100%;
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
+}
+
 .footer-form-title {
   font-family: "Roboto";
   @include font();
@@ -120,7 +137,10 @@
   color: var(--primary-bg-color);
   margin-bottom: 20px;
   padding-top: 12px;
-  // margin-left: 95px;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
 }
 .footer-form-div {
   @media screen and (min-width: 768px) {
@@ -131,11 +151,13 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: flex-end;
+    width: auto;
   }
 }
 
 .footer-form-input {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -146,7 +168,14 @@
   padding: 16px 12px;
   background-color: rgba(47, 48, 58, 1);
   margin-bottom: 20px;
-
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    display: inline;
+    margin: 0;
+  }
   &:focus {
     outline: none;
     border-color: var(--accent-color);
@@ -154,6 +183,13 @@
   &::placeholder {
     font-size: 16px;
     color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.footer-form-wrapper {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
@@ -183,6 +219,7 @@
 
   @media screen and (min-width: 1200px) {
     display: inline-flex;
+    margin: 0;
   }
 }
 .footer-form-icon {

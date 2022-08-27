@@ -38,6 +38,8 @@ ol {
 }
 
 img {
+  max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -580,7 +582,7 @@ body {
   border-radius: 2px;
   width: 100%;
   height: 4px;
-  bottom: -9px;
+  bottom: -1px;
 }
 
 .contact-list {
@@ -966,6 +968,10 @@ body {
   fill: var(--primary-bg-color);
 }
 
+.team-img {
+  width: 100%;
+}
+
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -1200,6 +1206,10 @@ button.current-1 {
   transform: translate(0, 0);
 }
 
+.work-img-wrapper__work-img {
+  width: 100%;
+}
+
 .footer-theme-dark {
   font-family: var(--secondary-font);
   font-weight: 700;
@@ -1218,11 +1228,19 @@ button.current-1 {
 
 .footer-container {
   display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    justify-content: space-between;
   }
 }
 
@@ -1230,9 +1248,13 @@ button.current-1 {
   display: flex;
 }
 
+.page-footer-container {
+  text-align: center;
+}
 @media screen and (min-width: 1200px) {
   .page-footer-container {
     margin-right: 70px;
+    text-align: left;
   }
 }
 
@@ -1277,8 +1299,6 @@ button.current-1 {
 }
 
 .social-title {
-  font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1286,6 +1306,12 @@ button.current-1 {
   text-transform: uppercase;
   color: var(--primary-bg-color);
   margin-bottom: 20px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .social-title {
+    text-align: left;
+  }
 }
 
 .social {
@@ -1308,6 +1334,15 @@ button.current-1 {
   background-color: var(--accent-color);
 }
 
+.footer-form {
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    width: auto;
+  }
+}
+
 .footer-form-title {
   font-family: "Roboto";
   font-size: 14px;
@@ -1318,6 +1353,12 @@ button.current-1 {
   color: var(--primary-bg-color);
   margin-bottom: 20px;
   padding-top: 12px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1331,11 +1372,13 @@ button.current-1 {
   .footer-form-div {
     display: flex;
     justify-content: flex-end;
+    width: auto;
   }
 }
 
 .footer-form-input {
-  width: 358px;
+  width: 100%;
+  max-width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -1346,6 +1389,16 @@ button.current-1 {
   padding: 16px 12px;
   background-color: rgb(47, 48, 58);
   margin-bottom: 20px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form-input {
+    width: 358px;
+    display: inline;
+    margin: 0;
+  }
 }
 .footer-form-input:focus {
   outline: none;
@@ -1354,6 +1407,13 @@ button.current-1 {
 .footer-form-input::placeholder {
   font-size: 16px;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-form-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .footer-form-submit {
@@ -1385,6 +1445,7 @@ button.current-1 {
 @media screen and (min-width: 1200px) {
   .footer-form-submit {
     display: inline-flex;
+    margin: 0;
   }
 }
 
