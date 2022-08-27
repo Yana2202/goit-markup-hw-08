@@ -1397,7 +1397,7 @@ button.current-1 {
   .footer-form-input {
     width: 358px;
     display: inline;
-    margin: 0;
+    margin-right: 12px;
   }
 }
 .footer-form-input:focus {
