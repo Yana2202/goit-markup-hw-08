@@ -1310,7 +1310,7 @@ button.current-1 {
 }
 @media screen and (min-width: 1200px) {
   .social-title {
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -1398,6 +1398,7 @@ button.current-1 {
     width: 358px;
     display: inline;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 .footer-form-input:focus {
