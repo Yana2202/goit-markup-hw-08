@@ -26,6 +26,17 @@
   flex-wrap: wrap;
   gap: 30px;
 }
+.wrapper {
+  @media screen and (min-width: 320px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
 
 .features-item {
   @media screen and (min-width: 768px) {
@@ -49,8 +60,7 @@
   color: var(--primary-text-color);
 }
 .wrapper:not(:last-child) {
-  // width: 420px;
-  // height: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
